@@ -266,7 +266,7 @@ header.fixed-header {
   top: 0;
   left: 0;
   z-index: 9998;
-  background-color: rgba(255, 255, 255, 0.97);
+  background-color: rgba(43, 129, 178, 0.9);
   -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
@@ -318,11 +318,11 @@ header.transparent.light #brand a, header.transparent.light nav > ul > li > a {
   color: #fff; }
 
 header.fixed-header.transparent.light #brand a, header.fixed-header.transparent.light nav > ul > li > a {
-  color: #333;
+  color: #EEE;
   text-shadow: none; }
 
 header.fixed-header.transparent.light nav > ul > li:hover > a {
-  border-bottom: 2px solid #333; }
+  border-bottom: 2px solid #EEE; }
 
 nav > ul, nav > ul > li {
   float: left;
@@ -1836,12 +1836,12 @@ section.greyish {
   color: #fff !important; }
 
 .button.transparent.red, input.transparent.button.red {
-  border: 2px solid #fd685b;
-  color: #fd685b !important; }
+  border: 2px solid #ea0056;
+  color: #ea0056 !important; }
 
 .button.transparent.red:hover, input.button.transparent.red:hover {
-  border: 2px solid #fd685b;
-  background-color: #fd685b;
+  border: 2px solid #ea0056;
+  background-color: #ea0056;
   color: #fff !important; }
 
 .button.transparent.orange, input.transparent.button.orange {
@@ -1947,7 +1947,7 @@ section.greyish {
   Icons
 ----------------------------------------------------------------*/
 .red, i.icon.red, i.fa.red {
-  color: #fd685c; }
+  color: #EA0F58; }
 
 .orange, i.icon.orange, i.fa.orange {
   color: #fa6f57; }
