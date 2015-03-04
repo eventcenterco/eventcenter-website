@@ -1,0 +1,28 @@
+/*----------------------------------------------------------------
+  Team
+----------------------------------------------------------------*/
+
+.about-us img {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1);
+}
+
+.about-us figcaption {
+  text-align: center;
+}
+
+.about-us figcaption h4 {
+  margin-bottom: 0.2em;
+}
+
+.about-us figcaption p {
+  font-size: 0.778em;
+}
+
+.about-us .meta-social {
+  font-size: 0.722em;
+}

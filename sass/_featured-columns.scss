@@ -1,0 +1,80 @@
+/*----------------------------------------------------------------
+  Featured columns
+----------------------------------------------------------------*/
+
+.small-icon,
+.big-icon {
+  width: 2em;
+  height: 2em;
+  -webkit-border-radius: 25%;
+  -moz-border-radius: 25%;
+  border-radius: 25%;
+  background-color: rgba(0,0,0,0.03);
+  line-height: 2;
+}
+
+.small-icon-text {
+  margin-left: 4.444em;
+}
+
+.small-icon-text h4 {
+  margin-top: 1.1em;
+}
+
+.small-icon {
+  display: block;
+  float: left;
+  font-size: 1.667em;
+}
+
+.small-icon i {
+  width: inherit;
+  text-align: center;
+}
+
+.small-icon,
+.small-icon-text,
+.small-icon-text h4,
+.small-icon-text p {
+  clear: none;
+}
+
+.big-icon-text h4 {
+  font-size: 1.333em;
+}
+
+.big-icon {
+  display: inline-block;
+  font-size: 5.556em;
+}
+
+.text-s {
+  font-size: 0.778em;
+}
+
+.text-xs {
+  font-size: 0.722em;
+}
+
+.text-light {
+  color: rgba(255,255,255,0.9);
+}
+
+.text-light h1,
+.text-light h2,
+.text-light h3,
+.text-light h4,
+.text-light h5,
+.text-light h6,
+.text-light i {
+  color: #fff;
+}
+
+.text-light .small-icon,
+.text-light .big-icon {
+  background-color: rgba(255,255,255,0.15);
+}   
+
+.text-light a {
+  color: #fff;
+}

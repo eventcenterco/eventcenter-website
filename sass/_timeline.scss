@@ -1,0 +1,86 @@
+/*----------------------------------------------------------------
+  Timeline
+----------------------------------------------------------------*/
+
+.timeline-label h4 {
+  margin-top: 0;
+  font-size: 1.556em;
+}
+
+.timeline-label p {
+  font-size: 0.889em;
+}
+
+.timeline .experience {
+  position: relative;
+  float: left;
+  margin-left: 2em;
+  padding-left: 2em;
+  border-left: 2px solid #ccc;
+}
+
+.timeline .experience-info h5 {
+  margin-top: 0;
+  margin-bottom: 0.333em;
+  font-size: 1em;
+}
+
+.timeline .experience-info .role {
+  font-size: 0.778em;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.timeline .experience-info p {
+  color: #999;
+  font-size: 0.722em;
+}
+
+.timeline time {
+  display: block;
+  width: 4.111em;
+  color: #ccc;
+  text-align: center;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.timeline .experience-img,
+.timeline .experience-info,
+.timeline .experience-info h5,
+.timeline .experience-info .role,
+.timeline .experience-info p {
+  clear: none;
+}
+
+.timeline .experience .circle {
+  position: absolute;
+  top: 1em;
+  left: -0.667em;
+  display: block;
+  width: 1.222em;
+  height: 1.222em;
+  border: 3px solid #ccc;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background-color: #F5F5F5;
+}
+
+.timeline .experience-img {
+  float: left;
+  width: 3.333em;
+  height: 3.333em;
+}
+
+.timeline .experience-img img {
+  -webkit-border-radius: 25%;
+  -moz-border-radius: 25%;
+  border-radius: 25%;
+  -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.08);
+  -moz-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.08);
+}
+
+.timeline .experience-info {
+  margin-left: 4.444em;
+}

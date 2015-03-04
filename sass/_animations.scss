@@ -1,0 +1,261 @@
+/*----------------------------------------------------------------
+  onScreen animations
+----------------------------------------------------------------*/
+
+.slogan.animation.onscreen,
+.call-to-action .animation.onscreen,
+.side-mockup.left-mockup.animation.onscreen {
+  opacity: 1;
+  -webkit-transition-delay: 0.2s;
+  -moz-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+  -webkit-animation: lfade .65s ease forwards;
+  -moz-animation: lfade .65s ease forwards;
+  animation: lfade .65s ease forwards;
+}
+
+.side-mockup.right-mockup.animation.onscreen {
+  opacity: 1;
+  -webkit-transition-delay: 0.2s;
+  -moz-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+  -webkit-animation: rfade .65s ease forwards;
+  -moz-animation: rfade .65s ease forwards;
+  animation: rfade .65s ease forwards;
+}
+
+.count-subject.subject-on {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+  -webkit-animation: smalllfade .65s ease forwards;
+  -moz-animation: smalllfade .65s ease forwards;
+  animation: smalllfade .65s ease forwards;
+}
+
+.owl-item .caption h2,
+.owl-item .caption p,
+.owl-item .caption .button,
+.owl-item .caption-mockup h2,
+.owl-item .caption-mockup p,
+.owl-item .caption-mockup .button,
+.owl-item .photocaption,
+.side-mockup.left-mockup.animation,
+.side-mockup.right-mockup.animation,
+.slogan.animation,
+.call-to-action .animation {
+  opacity: 0;
+}
+
+.owl-item.active .photocaption {
+  opacity: 0;
+  -webkit-transform: translateX(3em);
+  -moz-transform: translateX(3em);
+  -ms-transform: translateX(3em);
+  -o-transform: translateX(3em);
+  transform: translateX(3em);
+  -webkit-animation: photocaption .65s ease forwards;
+  -moz-animation: photocaption .65s ease forwards;
+  animation: photocaption .65s ease forwards;
+  -webkit-animation-delay: .6s;
+  -moz-animation-delay: .6s;
+  animation-delay: .6s;
+}
+
+.no-cssanimations .owl-item.active .photocaption {
+  -ms-transform: translateX(0);   
+}
+
+.owl-item.active .intro-mockup img {
+  opacity: 0;
+  -webkit-transform: translateY(3em);
+  -moz-transform: translateY(3em);
+  -ms-transform: translateY(3em);
+  -o-transform: translateY(3em);
+  transform: translateY(3em);
+  -webkit-animation: mcaption .65s ease forwards;
+  -moz-animation: mcaption .65s ease forwards;
+  animation: mcaption .65s ease forwards;
+  -webkit-animation-delay: .8s;
+  -moz-animation-delay: .8s;
+  animation-delay: .8s;
+}
+
+.owl-item.active .caption h2,
+.owl-item.active .caption-mockup h2 {
+  opacity: 0;
+  -webkit-animation: fade .65s ease forwards;
+  -moz-animation: fade .65s ease forwards;
+  animation: fade .65s ease forwards;
+  -webkit-animation-delay: .6s;
+  -moz-animation-delay: .6s;
+  animation-delay: .6s;
+}
+
+.owl-item.active .caption p,
+.owl-item.active .caption-mockup p {
+  opacity: 0;
+  -webkit-animation: fade .65s ease forwards;
+  -moz-animation: fade .65s ease forwards;
+  animation: fade .65s ease forwards;
+  -webkit-animation-delay: .8s;
+  -moz-animation-delay: .8s;
+  animation-delay: .8s;
+}
+
+.owl-item.active .caption .button,
+.owl-item.active .caption-mockup .button {
+  opacity: 0;
+  -webkit-animation: fade .65s ease forwards;
+  -moz-animation: fade .65s ease forwards;
+  animation: fade .65s ease forwards;
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.no-cssanimations .owl-item.active .photocaption,
+.no-cssanimations .owl-item.active .caption h2,
+.no-cssanimations .owl-item.active .caption-mockup h2,
+.no-cssanimations .owl-item.active .caption p,
+.no-cssanimations .owl-item.active .caption-mockup p,
+.no-cssanimations .owl-item.active .caption .button,
+.no-cssanimations .owl-item.active .caption-mockup .button {
+  opacity: 1;
+}    
+
+@-webkit-keyframes fade {
+  to {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fade {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes photocaption {
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+  }
+}
+
+@-moz-keyframes photocaption {
+  to {
+    opacity: 1;
+    -moz-transform: translateX(0);
+  }
+}
+
+@keyframes photocaption {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes mcaption {
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+
+@-moz-keyframes mcaption {
+  to {
+    opacity: 1;
+    -moz-transform: translateY(0);
+  }
+}
+
+@keyframes mcaption {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes lfade {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(-3em);
+  }
+}
+
+@-moz-keyframes lfade {
+  from {
+    opacity: 0;
+    -moz-transform: translateX(-3em);
+  }
+}
+
+@keyframes lfade {
+  from {
+    opacity: 0;
+    transform: translateX(-3em);
+  }
+}
+
+@-webkit-keyframes smalllfade {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(-1em);
+  }
+}
+
+@-moz-keyframes smalllfade {
+  from {
+    opacity: 0;
+    -moz-transform: translateX(-1em);
+  }
+}
+
+@keyframes smalllfade {
+  from {
+    opacity: 0;
+    transform: translateX(-1em);
+  }
+}
+
+@-webkit-keyframes rfade {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(3em);
+  }
+}
+
+@-moz-keyframes rfade {
+  from {
+    opacity: 0;
+    -moz-transform: translateX(3em);
+  }
+}
+
+@keyframes rfade {
+  from {
+    opacity: 0;
+    transform: translateX(3em);
+  }
+}
