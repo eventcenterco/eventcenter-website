@@ -1173,8 +1173,8 @@ function googleMap() {
     };
 
     /* Map's style */
-    var red1 = "#fd685b",
-    red2 = "#fe8e84",
+    var red1 = "#a80055",
+    red2 = "#EA0F58",
     orange1 = "#fa6f57",
     orange2 = "#fb9381",
     yellow1 = "#fecd5e",
@@ -1208,7 +1208,7 @@ function googleMap() {
       }, {
         "featureType": "water",
         "stylers": [{
-          "color": red1
+          "color": white1
         }]
       }, {
         "featureType": "water",
@@ -1219,13 +1219,13 @@ function googleMap() {
       }, {
         "featureType": "landscape.natural",
         "stylers": [{
-          "color": red2
+          "color": red1
         }]
       }, {
         "featureType": "road",
         "elementType": "geometry",
         "stylers": [{
-          "visibility": "off"
+          "color": grey1
         }]
       }, {
         "featureType": "poi",
@@ -1235,7 +1235,7 @@ function googleMap() {
       }, {
         "featureType": "road",
         "stylers": [{
-          "visibility": "off"
+          "color": grey2
         }]
       }, {
         "featureType": "transit",
