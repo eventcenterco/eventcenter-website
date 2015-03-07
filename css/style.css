@@ -245,6 +245,12 @@ header {
 .no-parallax header.transparent.light #brand a, .no-parallax header.transparent.light nav > ul > li > a {
   color: #333 !important; }
 
+.no-parallax header.transparent.light #brand a #default-logo {
+  display: none; }
+
+.no-parallax header.transparent.light #brand a #alt-logo {
+  display: block; }
+
 header.transition {
   -webkit-transition: background-color 0.3s ease;
   -moz-transition: background-color 0.3s ease;
@@ -298,21 +304,14 @@ nav {
 #brand a, nav a {
   color: #333; }
 
-#brand a img#default-logo, #brand a img#retina-logo {
+#brand a img#default-logo, #brand a img#alt-logo, #brand a img#retina-logo {
   float: left;
   margin-top: 0.286em;
   margin-right: 0.5em;
   height: 1.143em; }
 
-#brand a img#retina-logo {
+#brand a img#alt-logo {
   display: none; }
-
-/* retina logo */
-@media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) {
-  #brand a img#retina-logo {
-    display: block; }
-  #brand a img#default-logo {
-    display: none; } }
 
 header.transparent.light #brand a, header.transparent.light nav > ul > li > a {
   color: #fff; }
