@@ -1,0 +1,21 @@
+language: node_js
+
+node_js:
+ - 0.10.31
+
+env:
+  global:
+    - APP_NAME=eventcenter-website
+    - BETA_APP_NAME=eventcenter-website-beta
+
+script:
+  - mocha
+
+after_success:
+  - if [ $BRANCH == "master" ]; then git push -f git@heroku.com:$APP_NAME.git $BRANCH:master; else git push -f git@heroku.com:$BETA_APP_NAME.git $BRANCH:master; fi
+
+# include
+branches:
+  only:
+    - develop
+    - master

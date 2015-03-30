@@ -32,6 +32,14 @@ header {
   color: #333 !important;
 }
 
+.no-parallax header.transparent.light #brand a #default-logo {
+  display: none;
+}
+
+.no-parallax header.transparent.light #brand a #alt-logo {
+  display: block;
+}
+
 header.transition {
   -webkit-transition: background-color 0.3s ease;
   -moz-transition: background-color 0.3s ease;
@@ -58,7 +66,7 @@ header.fixed-header {
   top: 0;
   left: 0;
   z-index: 9998;
-  background-color: rgba(255, 255, 255, 0.97);
+  background-color: rgba(0, 0, 0, 0.5);
   -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
@@ -101,6 +109,7 @@ nav a {
 }
 
 #brand a img#default-logo,
+#brand a img#alt-logo,
 #brand a img#retina-logo {
   float: left;
   margin-top: 0.286em;
@@ -108,25 +117,11 @@ nav a {
   height: 1.143em;
 }
 
-#brand a img#retina-logo {
+#brand a img#alt-logo {
   display: none;
 }
 
-/* retina logo */
-@media only screen and (-moz-min-device-pixel-ratio: 1.5),
-only screen and (-o-min-device-pixel-ratio: 3/2),
-only screen and (-webkit-min-device-pixel-ratio: 1.5),
-only screen and (min-device-pixel-ratio: 1.5),
-only screen and (min-resolution: 144dpi) {
 
-  #brand a img#retina-logo {
-    display: block;
-  }
-
-  #brand a img#default-logo {
-    display: none;
-  }
-}
 
 header.transparent.light #brand a,
 header.transparent.light nav > ul > li > a {
@@ -135,12 +130,12 @@ header.transparent.light nav > ul > li > a {
 
 header.fixed-header.transparent.light #brand a,
 header.fixed-header.transparent.light nav > ul > li > a {
-  color: #333;
+  color: #EEE;
   text-shadow: none;
 }
 
 header.fixed-header.transparent.light nav > ul > li:hover > a {
-  border-bottom: 2px solid #333;
+  border-bottom: 2px solid #EEE;
 }
 
 nav > ul,
