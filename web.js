@@ -1,6 +1,14 @@
 var express = require('express');
 var app = express();
 
-app.use('/', express.static(__dirname + '/'));
+app.use('/', function(req, res, next) {
+  console.log(req.path);
+  if(req.path != '/') {
+    next();
+  } else {
+    res.redirect('/es/');
+  }
+});
 
+app.use('/', express.static(__dirname + '/'));
 app.listen(process.env.PORT || 5000);
